@@ -209,7 +209,7 @@ $(document).ready(function(){
     
 			 $('#indepth_cover_view').css("position","absolute");
     }else{
-    	$('#indepth_cover').css("height",(ventana_alto)+"px");
+    	$('#indepth_cover').css("height",(ventana_alto-100)+"px");
     	 if(ventana_alto>600){
 	 	$('.indepth_break').css("height",ventana_alto+"px");
 
@@ -231,7 +231,7 @@ $(document).ready(function(){
 $(window).on("resize", function(){
 	indepth_sizeAdjust(false);
 	var ventana_alto = $(window).height();
-    	$('#indepth_cover').css("height",(ventana_alto)+"px");
+    	$('#indepth_cover').css("height",(ventana_alto-100)+"px");
     	 if(ventana_alto>600){
 	 	$('.indepth_break').css("height",ventana_alto+"px");
 	 	//$('#indepth_cover .indepth_cover_back_body').css("top",ventana_alto*.60);

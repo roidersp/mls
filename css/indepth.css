@@ -206,18 +206,17 @@
 }
 
 #indepth_cover .indepth_cover_back_body{
-	position: relative;
-	top: 0px;
-
+	position: absolute;
+	bottom:  5px;
+	left:5%;
 	padding: 20px 0;
 }
 
 #indepth_cover .indepth_title{
 	font-size:44px;
-	color:#970d12;
+	color:white;
 	text-transform: uppercase;
 	font-weight: 700;
-	text-align: center;
 	line-height: 40px;
 	
 	
@@ -225,12 +224,8 @@
 
 #indepth_cover .indepth_subtitle{
 	font-size:30px;
-	color:#970d12;
+	color:white;
 	font-weight: 400;
-	text-align: center;
-	width: 500px;
-	margin: auto;
-	border-top: 3px solid #970d12;
 	text-transform: uppercase;
 	padding-top: 5px;
 }
@@ -416,34 +411,7 @@ margin-top: 15px;
 	margin: auto;
 }
 
-#indepth_page1{
-}
 
-#indepth_page3{
-}
-
-#indepth_page4{
-	
-}
-
-#indepth_page4a{
-}
-
-.indepth_page_image .indepth_page_body{
-	width: 800px;
-}
-
- #indepth_page3{
-	background: url(../images/Pixel_Foto2.jpg) center repeat;
-}
-
-#indepth_page6{
-		background-image: url(../images/background.jpg);
-		background-position: center center;
-		background-image: cover;
-		background-attachment: fixed;
-		
-}
 
 
 
@@ -525,6 +493,10 @@ background-size: cover;
 
 .indepth_infografia{
 	width: 100%;
+}
+
+.indepth_infografia.movil{
+	display: none;
 }
 
 .indepth_infografia img{
@@ -613,7 +585,10 @@ background-size: cover;
 
 @media screen and (max-width: 800px) {
 
-
+.indepth_text{
+	width: 96%;
+	margin: auto;
+}
 
 
 #indepth_cover .indepth_subtitle2 div{
@@ -685,7 +660,12 @@ background-size: cover;
 		max-height: 700px;
 	}
 	
-	
+	.indepth_infografia.movil{
+		display: block;
+	}
+	.indepth_infografia{
+	display: none;
+}
 	
 	
 
@@ -723,6 +703,12 @@ background-size: cover;
 		top: -15px;
 	}
 
+	#indepth_cover .indepth_cover_back_body{
+	position: absolute;
+	top:  30px;
+	left:2%;
+	padding: 20px 0;
+}
 	
 	
 }
@@ -766,10 +752,6 @@ background-size: cover;
 }
 .indepth_text{
 	width: 100%;
-}
-
-.indepth_page_image .indepth_page_body{
-	width: 95%;
 }
 
 }
@@ -874,13 +856,7 @@ background-size: cover;
 margin: 0 12px;
 }
 
-#indepth_page1{
-	height: 2600px;
-}
 
-#indepth_page4{
-	height: 2000px;
-}
 
 
 #indepth_cover .indepth_title{
@@ -899,10 +875,7 @@ margin: 0 12px;
 	padding-top: 5px;
 }
 
-#indepth_cover .indepth_cover_back_body {
 
-padding: 10px 0;
-}
 
 	}
 	
@@ -941,12 +914,9 @@ padding: 10px 0;
 	#indepth_cover {
 height: 362px;
 }
-#indepth_cover .indepth_cover_back_body {
-top: 160px;
-}
+
 
 #indepth_cover .indepth_title {
-font-size: 25px;
 }
 			
 	}
